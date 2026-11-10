@@ -93,6 +93,7 @@ scripts/seed.ts sample history on a fake clock
 | | |
 |---|---|
 | `npm run dev` | start with reload on change |
+| `npm start` | start without the file watcher |
 | `npm run seed` | add sample past conversations |
 | `npm test` | unit tests |
 | `npm run typecheck` | `tsc --noEmit` |
