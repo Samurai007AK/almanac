@@ -1,0 +1,28 @@
+{
+  "name": "almanac",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A chat agent with one tool, web search, and a dated memory of everything you've asked it.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false --no-warnings=ExperimentalWarning src/server.ts",
+    "start": "tsx --no-warnings=ExperimentalWarning src/server.ts",
+    "seed": "tsx --no-warnings=ExperimentalWarning scripts/seed.ts",
+    "test": "tsx --test src/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chrono-node": "^2.10.3",
+    "dompurify": "^3.4.17",
+    "marked": "^18.2.0",
+    "openai": "^7.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
